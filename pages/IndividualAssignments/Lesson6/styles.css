@@ -1,5 +1,5 @@
 main body {
-    background-image: url(/images/Wallpaper3.jpeg);
+    background-image: url(images/Wallpaper3.jpeg);
     background-size: 750px 750px;
     background-repeat: repeat;
     margin: 0;
@@ -30,7 +30,7 @@ main body {
 main footer {
     position: fixed;
     width: 100%;
-    background-image: url(/images/Wainscoting.jpg);
+    background-image: url(images/Wainscoting.jpg);
     position: fixed;
     bottom: -20;
     left: 0;
@@ -60,7 +60,7 @@ footer div {
 }
 
 main .ShelfFront {
-    background-image: url(/images/Shelf.jpeg);
+    background-image: url(images/Shelf.jpeg);
     height: 25px;
     justify-content: center;
     width: 65%;
