@@ -14,7 +14,7 @@ main section {
 }
 
 main #otter {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     end: 0;
     width: 150px;
