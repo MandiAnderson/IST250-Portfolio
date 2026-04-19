@@ -7,7 +7,7 @@ html, body {
     box-sizing: border-box;
 }
 
-body {
+main {
     position: relative;
     top: 0;
     width: 100%;
@@ -16,23 +16,24 @@ body {
     height: 100%;
 }
 
-p {
+
+main p {
     font-family: 'Figtree', sans-serif;
     letter-spacing: 0.33px;
 }
 
-h4 {
+main h4 {
     font-weight: normal;
 }
 
-.Logo {
+main .Logo {
     align-items: center;
     padding-top: 25px;
     position: relative;
     width: 100%;
 }
 
-.Logo img {
+main .Logo img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -55,21 +56,21 @@ h4 {
     transition: background-image 0.5s ease;
 }
 
-.PageSection {
+main .PageSection {
     color: white;
     min-width: 100%;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.66);
 }
 
-.PageInformation {
+main .PageInformation {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Menu Tab */
-.MenuInformation {
+main .MenuInformation {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -77,7 +78,7 @@ h4 {
     flex-direction: row;
 }
 
-.MenuInformation ul {
+main .MenuInformation ul {
     list-style-type: none;
     text-align: center;
 }
@@ -117,14 +118,14 @@ h4 {
     font-size: 14px;
 }
 
-.divider {
+main .divider {
     display: flex;
     align-items: center;
     font-size: 22px;
     font-weight: bold;
 }
 
-.divider::before, .divider::after {
+main .divider::before, .divider::after {
     content: '';
     flex: 1;
     padding: 3px;
