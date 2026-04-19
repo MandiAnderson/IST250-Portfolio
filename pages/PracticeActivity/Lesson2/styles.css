@@ -1,0 +1,91 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    width: 75%;
+}
+
+head {
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main > h1 {
+    font-family: "Lilita One";
+    color: #3D4431;
+    font-size: 52px;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 1px black;
+}
+
+main > h2 {
+    font-family: "Lilita One";    
+    color: #3D4431;
+    font-size: 36px;
+    text-shadow: 1px 1px 1px black;
+}
+
+main > h3, #simplesite-tableheader {
+    font-family: "Lilita One";    
+    color: #483C32;
+    font-size: 24px;
+}
+
+main > div > p {
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: #483C32;
+}
+
+main {
+    background-image: url("./images/fernpattern.png");
+    background-size: 50%;
+    background-attachment: fixed;
+    background-color:#A3B38F;
+    background-blend-mode: soft-light;
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-align: center;
+
+}
+
+.simplesite-table {
+    background-color: #7F8F67;
+    table-layout: fixed;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.simplesite-table > tr > th, .simplesite-table > thead > tr > th {
+    font-size: 24px;
+    color: #483C32;
+    text-align: center;
+}
+
+.simplesite-table > tbody > tr > td, .simplesite-table > tr > td {
+    font-size: 20px;
+    color: #483C32;
+    text-align: center;
+}
+
+.simplesite-table-image {
+    box-shadow: 2px 2px 15px #000000;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+    max-width: 100%;
+    margin: 25px;
+}
+
+.simplesite-table-image:hover {
+  transform: scale(1.1);
+}
+
+.simplesite-container {
+    width: 50%; 
+    background-color: hsla(87, 19%, 63%, 0.75);
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+}
