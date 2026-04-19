@@ -1,0 +1,901 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    top: 0;
+    width: 100%;
+    font-family: 'Libre Baskerville', serif;
+    background-color: black;
+    height: 100%;
+}
+
+p {
+    font-family: 'Figtree', sans-serif;
+    letter-spacing: 0.33px;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+.Logo {
+    align-items: center;
+    padding-top: 25px;
+    position: relative;
+    width: 100%;
+}
+
+.Logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+
+}
+
+#PageContent {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    transition: background-image 0.5s ease;
+}
+
+.PageSection {
+    color: white;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.66);
+}
+
+.PageInformation {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu Tab */
+.MenuInformation {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.MenuInformation ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.MenuInformation ul > li {
+    font-size: 18px;
+    padding: 10px;
+}
+
+#HandRolls > li {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.MenuInformation table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.MenuInformation td {
+    text-align: center;
+    padding: 10px;
+}
+
+.MenuContainer {
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.MenuContainer li {
+    break-inside: avoid;
+}
+
+.Description {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    padding: 3px;
+    background-color: #ee1a26;
+    margin: 10px;
+}
+
+/* Menu Images */
+#Menu {
+    height: 400vh;
+}
+.MenuContainer button {
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-color: #ee1a26;
+    cursor: pointer;
+}
+
+#Plates {
+    width: 55%; 
+    padding-bottom: 10vh;
+}
+
+#Sushi {
+    width: 45%;
+}
+
+#HandRolls, #NoodlesRice, #SmallPlates {
+    column-count: 3; 
+    column-width: 30%; 
+    break-inside: avoid;
+}
+
+#LargePlates {
+    column-count: 2; 
+    column-width: 50%;
+    break-inside: avoid;
+}
+
+#Menu {
+    height: 325vh;
+}
+
+.menuItems {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menuItemImage {
+    float: left;
+    height: 400px;
+    width: 20%;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menuItemImage:hover {
+    transform: scale(1.05);
+}
+
+.menuItemImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.drinkMenuItems {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.drinkMenuListing {
+    display: grid;
+    grid-template-columns: auto;
+    height: 350px;
+    width: 18%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 3px solid white;
+}
+
+.drinkMenuListing span {
+    padding: 5px 10px 10px 10px;
+}
+
+.drinkMenuListing img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    height: 80%;
+    width: auto;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Contact Page */
+#Contact {
+    height: 222vh;
+}
+
+.ContactPageFlexBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.ContactCallout {
+    width: 66%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow: hidden;
+    border-top: 5px solid #ee1a26;
+}
+
+.ContactCallout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Form */
+.ContactCallout form {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px auto 20px auto;
+    z-index: 1;
+}
+
+.ContactCallout form label {
+    width: 20%;
+    text-align: right;
+    align-content: center;
+}
+
+.ContactCallout form input, .ContactCallout form textarea {
+    width: 75%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    color: white;
+}
+
+#SendButton {
+    width: 25%;
+    background-color: #ee1a26;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    margin: 25px auto 0px auto;
+}
+
+#ContactInfo {
+    position: relative; 
+    width: 75%; 
+    height: auto; 
+    margin: 0 auto 25px auto;
+    padding: 0px 25px 10px 25px;
+    margin: 0px auto 50px auto;
+    justify-content: center;
+}
+
+#ContactImages {
+    width: 30%;
+    height: auto;
+}
+
+#BottomContactImages {
+    width: 32%;
+    height: auto;
+}
+
+#LeftEventInfo {
+    padding: 2px 25px 25px 25px;
+}
+
+#RightLocationInfo {
+    padding: 2px 25px 25px 25px;
+}
+
+/* About Page */
+#About {
+    height: 122vh;
+}
+
+.AboutContent {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+.AboutQuote {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-top: 5px solid #ee1a26;
+    padding: 0px 25px 0px 25px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.AboutContent p, .AboutInfo p {
+    line-height: 1.375;
+    text-align: justify;
+    text-shadow: 1px 1px 3px black;
+}
+
+.AboutInfo {
+    font-size: 18px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.AboutImage {
+    grid-template-columns: auto;
+    border-top: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.AboutImage p {
+    padding: 0px 25px 0px 25px;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.AboutImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+#Zama1 {
+    width: 30%;
+    float: left;
+    margin: 0px 50px 25px 0px;
+}
+
+#Zama2 {
+    width: 30%;
+    float: right;
+    margin: 0px 0px 25px 50px;
+}
+
+.AboutRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navigation */
+.NavButton {
+    float: left;
+    border: none;
+    outline: none;
+    width: 25%;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    padding: 14px 16px;
+    z-index: 1;
+    background-color: black;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+.NavButton.active {
+    color: #ee1a26;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 0 -2px 0 #ee1a26;
+    background-color: transparent !important;
+}
+
+.NavButton:hover {
+    color: #ee1a26;
+}
+
+
+/* Home Page */
+.PageInformation {
+    margin-top: 20px;
+    width: 95%;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.PageInformation h3 {
+    margin-top: 25px;
+}
+
+.HomePageImage {
+    width: 25%;
+    margin: 0px 0px 0px 50px;
+    grid-template-columns: auto;
+    border-top: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    float: right;
+}
+
+.HomePageImage p {
+    padding: 0px 25px 5px 25px;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.HomePageImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.HomePageQuote {
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-top: 5px solid #ee1a26;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Reviews */
+.ReviewContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    align-items: stretch;
+    margin-top: 25px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(circle at top, rgba(238, 27, 38, 0.33) 0%, rgba(0, 0, 0, 0.75) 80%);
+    width: 18%;
+    border-radius: 5px;
+}
+
+.review p {
+    text-align: left;
+    padding: 20px 20px 0px 20px;
+    margin: 0;
+    line-height: 1.25;
+}
+
+.customer-name {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 0px 0px 20px;
+}
+
+.rating {
+    width: 100%;
+    padding: 20px 0px 10px 0px;
+    font-size: 14px;
+    background-image: linear-gradient(to bottom, hsla(357, 86%, 52%, 0), hsla(357, 86%, 52%, 0.33));
+    box-shadow: inset 0 -3px 0 #ee1a26;
+    color: white;
+    margin-top: auto;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+
+.HomePageMap {
+    display: none;
+}
+
+/* Footer */
+footer { 
+    position: fixed;
+    bottom: -50;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0 -5px 0 #ee1a26;
+    color: white;
+    gap: 10px;
+}
+
+.FooterInfo {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FooterInfo div {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*Tablets*/
+@media (max-width: 1200px) {
+    #Home {
+        height: 160vh;
+    }
+
+    #About {
+        height: 155vh;
+    }
+
+    #Contact {
+        height: 250vh;
+    }
+
+    .HomePageMap {
+        display: none;
+    }
+
+    .ReviewContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review {
+        width: 100%;
+    }
+
+    .Logo img {
+        width: 50%;
+        padding: 0px 26px 6px 26px;
+    }    
+
+    #footerDescription, #footerCopyright{
+        display: none;
+    }
+    
+    #footerContact {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+   .menuItems {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #Plates, #Sushi, #HandRolls, #SmallPlates, #LargePlates {
+        width: 100%;
+    }
+
+    #SmallPlates, #LargePlates, #NoodlesRice {
+        column-count: 2; 
+        column-width: 45%;
+        break-inside: avoid;
+    }
+
+    #Sushi {
+        margin-bottom: 5vh;
+    }
+
+    .menuItems div:last-child {
+        display: none;
+    }
+
+    .menuItemImage {
+        width: 45%;
+        justify-content: center;
+    }
+
+    .MenuInformation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MenuInformation {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .modal-content {
+        height: auto;
+        width: 80%;
+    }
+
+    #Menu {
+        height: 585vh;
+    }
+
+    .drinkMenuItems {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .drinkMenuListing {
+        grid-template-columns: 250px 1fr;
+        width: 80%;
+        height: 250px;
+        margin: 10px auto 10px auto;
+        place-items: center;
+    }
+
+    .drinkMenuListing img {
+        width: 250px;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+
+     /* Contact Page */
+     .ContactCallout {
+        grid-template-columns: auto;
+    }
+}
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .Logo img {
+        width: 100%;
+        padding: 0px 26px 6px 26px;
+    }
+
+    .PageSection {
+        padding-bottom: 175px;
+    }
+
+    #Home {
+        height: 185vh;
+        padding: 0 25px 0 25px;
+    }
+
+    #Menu {
+        height: 775vh;
+    }
+
+
+
+    .HomePageImage {
+        width: 100%;
+        float: none;
+        margin: 0px auto 25px auto;
+    }
+
+    .PageInformation {
+        width: 100%;
+    }
+
+    .HomePageMap {
+        display: block;
+        height: 100%;
+    }
+
+    .HomePageMap img, .HomePageMap iframe {
+        width: 100%;
+        height: 350px;
+    }
+
+    .HomePageQuote, h3, h4 {
+        display: none;
+    }
+
+    .ReviewContainer {
+        display: none;
+    }
+
+    .review {
+        width: 100%;
+    }
+
+    .Navigation :last-child {
+        margin-bottom: 25px;
+    }
+
+    .NavButton {
+        width: 100%;
+        margin: 0;
+    }
+
+    .menuItems {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .MenuInformation {
+        width: 100%;
+    }
+
+    .menuItemImage {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menuItems div:last-child {
+        display: flex;
+    }
+
+    .MenuContainer ul {
+        column-count: 2;
+    }
+
+    #Sushi {
+        margin-bottom: 0vh;
+    }
+
+    #Contact {
+        height: 472vh;
+    }
+
+    .ContactPageFlexBox {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ContactCallout {
+        width: 100%;
+        grid-template-columns: auto;
+    }
+
+    #ContactInfo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #ContactInfo form {
+        width: 100%;
+    }
+
+    #ContactImages {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #BottomContactImages {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .PageInformation {
+        width: 95%;
+    }
+
+    .PageInformation h1 {
+        text-align: center;
+    }
+
+    #About {
+        height: 295vh;
+    }
+
+    .AboutContent {
+        width: 100%;
+    }
+
+    .AboutInfo {
+        width: 100%;
+    }
+
+    .AboutImage {
+        width: 100%;
+        float: none;
+        margin: 0px 0px 25px 0px;
+    }
+
+    .AboutQuote {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #Zama1, #Zama2 {
+        width: 100%;
+        margin: 0px 0px 25px 0px;
+    }
+
+    footer {
+        display: none;
+    }
+
+}
+
+h1, p, h3, h4 {
+    margin: revert;
+    padding: revert;
+    font-size: revert;
+}

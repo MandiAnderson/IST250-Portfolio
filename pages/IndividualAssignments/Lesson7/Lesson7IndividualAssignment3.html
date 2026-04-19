@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <title>CoZara</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="pointer-events: none;">Mandi Anderson - IST 250 Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarDark"
+            aria-controls="offcanvasNavbarDark"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbarDark"
+            aria-labelledby="offcanvasNavbarDarkLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel" style="user-select: none;">
+                Navigation
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-black"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../../../MandiA-Portfolio.html" style="color: black;"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Practice Activities
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="pages/PracticeActivity/Lesson2/index.html" style="color: black;">Lesson 2: Simple Webpage</a></li>
+                    <li>
+                      <a class="dropdown-item" href="pages/PracticeActivity/Lesson8/MandiA-Lesson8Activity2.html" style="color: black;">Lesson 8: CSS Transforms and Filters</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages/PracticeActivity/Lesson9/MandiA-Lesson9-PracticeActivity3.html" style="color: black;">Lesson 9: Bootstrap</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Individual Assignments
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="pages/IndividualAssignments/Lesson3/index.html" style="color: black;">Lesson 3: Selling on the Web</a></li>
+                    <li>
+                      <a class="dropdown-item" href="pages/IndividualAssignments/Lesson6/Lesson6IndividualAssignment2.html" style="color: black;">Lesson 6: The Record Store</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages/IndividualAssignments/Lesson7/Lesson7IndividualAssignment3.html" style="color: black;">Lesson 7: The Responsive Restaurant</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages/IndividualAssignments/Lesson11/Lesson11IndividualAssignment4.html" style="color: rgb(163, 163, 163);">Lesson 11: Bringing It All Together</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Partner Labs
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="pages/PartnerLabs/Lesson4/Lesson4PartnerLab1.html" style="color: black;">Lesson 4: A Well-Styled Website</a></li>
+                    <li>
+                      <a class="dropdown-item" href="pages/PartnerLabs/Lesson5/Lesson5PartnerLab2.html" style="color: black;">Lesson 5: An Interactive Website</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+  
+    <main style="transform: scale(0.999); border: 25px solid white; overflow: scroll; height: 95vh;">
+
+    <div class="Logo">
+        <img src="images/Logo.png" alt="CoZara Logo">
+    </div>
+    <div id="PageContent">
+            <div class="Navigation">
+                <button class="NavButton" id="defaultOpen" onclick="openPage('Home', this)">Home</button>
+                <button class="NavButton" onclick="openPage('Menu', this)">Menu</button>
+                <button class="NavButton" onclick="openPage('About', this)">About</button>
+                <button class="NavButton" onclick="openPage('Contact', this)">Contact</button>
+            </div>
+
+            <div id="Home" class="PageSection">
+                <div class="PageInformation">
+                    <div class="HomePageImage" id="HomeImageExterior">
+                        <img src="images/Exterior5.jpg" alt="Exterior Shot of CoZara">
+                        <p>Visit us at 3200 Chestnut Street in University City, near UPenn and Drexel campuses.</p>
+                    </div>
+
+                    <div class="HomePageQuote">Experience the perfect blend of comfort and flavor at CoZara, where every dish is crafted with care and passion.</div>
+                    <h4>Our cozy atmosphere invites you to relax and enjoy a meal that feels like home, while our diverse menu offers something for everyone. Whether you're craving a light lunch or a delicious dinner, CoZara is the place to be. Join us and discover your new favorite spot in town!</h4>
+
+                    <h3>Don't just take our word for it,</h3>
+                    <div class="ReviewContainer">
+                        <div class="review">
+                            <div class="customer-name">Marc</div>
+                            <p>One of my favorite sushi places in the area. Had wonderful, friendly service from Claudia, and Andrew is the consummate manager and host. Truly a great place.</p>
+                            <div class="rating">★ ★ ★ ★ ★</div>
+                        </div>
+                        <div class="review">
+                            <div class="customer-name">Billy</div>
+                            <p>Great Sushi. Reasonably priced, excellent service. Will be back!</p>
+                            <span class="rating">★ ★ ★ ★ ★</span>
+                        </div>
+                        <div class="review">
+                            <div class="customer-name">Paige</div>
+                            <p>Amazing as always! Andrew the manager and servers Crystal and Claudia were wonderful!! The food is always incredible.</p>
+                            <span class="rating">★ ★ ★ ★ ★</span>
+                        </div>
+                        <div class="review">
+                            <div class="customer-name">Aneshia</div>
+                            <p>This is my "go to" for really good Japanese food at a reasonable price.  They have an extensive menu.  It's a fun casual atmosphere with friendly service!</p>
+                            <span class="rating">★ ★ ★ ★ ★</span>
+                        </div>
+                        <div class="review">
+                            <div class="customer-name">Caroline</div>
+                            <p>coZara has a great, balanced menu. There’s always something no matter what myself or my dinner companions are in the mood for. The truffled Brussel sprouts are amazing.</p>
+                            <span class="rating">★ ★ ★ ★ ★</span>
+                        </div>
+                    </div>
+
+                    <div class="HomePageMap">
+                        <img src="images/Directions.png" alt="Directions to CoZara from 30th Street Station">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12233.761942631416!2d-75.19957242655677!3d39.9539033929739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c64fde6a34ad%3A0x4c9a97669b029df1!2s3200%20Chestnut%20St%2C%20Philadelphia%2C%20PA%2019104!5e0!3m2!1sen!2sus!4v1774809555309!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="Menu" class="PageSection">
+                <h1 style="text-align:center;">Menu</h1>
+                <p style="text-align: center;">Items with red underlines can be clicked to view images</p>
+                <div class="menuItems">
+                    <div class="menuItemImage">
+                        <img src="images/MushroomWonton.jpg" id="menuImage1" alt="Mushroom Wonton">
+                    </div>
+                    <div class="menuItemImage">
+                        <img src="images/UPennRoll3.jpg" id="menuImage2" alt="U Penn Roll">
+                    </div>
+                    <div class="menuItemImage">
+                        <img src="images/SeafoodRamen1.jpeg" id="menuImage3" alt="Seafood Ramen">
+                    </div>
+                    <div class="menuItemImage">
+                        <img src="images/ChickenWings.jpg" id="menuImage4" alt="Sushi">
+                    </div>
+                    <div class="menuItemImage">
+                        <img src="images/BraisedPork.jpg" id="menuImage5" alt="Soft Braised Pork" style="object-position: 20% 100%;">
+                    </div>
+                </div>
+
+                <div id="Modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                    <div id="caption"></div>
+                </div>
+
+                <div class="MenuInformation">
+                    <div class="MenuContainer" id="Plates">
+                        <div class="divider">Small Plates</div>
+                        <ul id="SmallPlates">
+                            <li>
+                                <strong><button class="modalButton">Yakionigiri</button></strong> ⦁ 3<br><span class="Description">Hand Formed Grilled Rice Ball, Teriyaki</span>
+                                <img src="images/Yakionigiri.jpg" id="Yakionigiri" alt="Yakionigiri" style="display:none;">
+                            </li>
+                            <li><strong>Seaweek Salad</strong> ⦁ 6 <strong>with Octopus</strong> ⦁ 9<br><span class="Description">Tosazi Vinaigrette</span></li>
+                            <li><strong>Pork Gyoza</strong> ⦁ 6<br><span class="Description">Fried / Pan Seared / or Steamed; Chili Soy</span></li>
+                            <li><strong>Grilled Vegetable Medley</strong> ⦁ 5<br><span class="Description">Mixed Vegetables Served with Olive Oil, Lemon Maldon Salt</span></li>
+                            <li><strong>Truffle Brussel Sprouts</strong> ⦁ 10<br><span class="Description">Parmesan, Truffle Oil, Yuzu Salt</span></li>
+                            <li>
+                                <strong><button class="modalButton">Fried Fingerling Potato</button></strong> ⦁ 5<br><span class="Description">Kewpie Mayo, Furikaka, Katsuobushi</span>
+                                <img src="images/FingerlingPotato.jpg" id="FriedFingerlingPotato" alt="Fried Fingerling Potato" style="display:none;">
+                            </li>
+                            <li><strong>Tempura Vegetables</strong> ⦁ 9 <strong>Add Shrimp</strong> ⦁ 15<br><span class="Description">Spicy Mayo, Dashi Soy</span></li>
+                            <li>
+                                <strong><button class="modalButton">Agedashi Tofu</button></strong> ⦁ 5<br><span class="Description">Dashi soy, Nameko Mushrooms</span>
+                                <img src="images/AgedashiTofu.jpg" id="AgedashiTofu" alt="Agedashi Tofu" style="display:none;">
+                            </li>
+                            <li><strong>Okonomiyaki</strong> ⦁ 5<br><span class="Description">Kewpie Mayo, Aonori, Otajoy Sauce</span></li>
+                            <li><strong>Edamame</strong> ⦁ 5<br><span class="Description">Soy Bean</span></li>
+                            <li><strong>Green Salad</strong> ⦁ 5 <strong>with Avocado</strong> ⦁ 7<br><span class="Description">Ginger Dressing</span></li>
+                            <li><strong>Sukiyaki Spring Rolls</strong> ⦁ 8<br><span class="Description">Shishito Pepper Aioli</span></li>
+                            <li>
+                                <strong><button class="modalButton">Chicken Wings</button></strong> ⦁ 7<br><span class="Description">Black Pepper & Honey Teriyaki, with Yuzu Soy Crème</span>
+                                <img src="images/ChickenWings.jpg" id="ChickenWings" alt="Chicken Wings" style="display:none;">
+                            </li>
+                            <li>
+                                <strong><button class="modalButton">Cheese Steak Bao Bun</button></strong> ⦁ 5<br><span class="Description">"American/wit"</span>
+                                <img src="images/CheesesteakBaoBun.jpg" id="CheeseSteakBaoBun" alt="Cheese Steak Bao Bun" style="display:none;">
+                            </li>
+                            <li>
+                                <strong><button class="modalButton">Pork Bao Bun</button></strong> ⦁ 4<br><span class="Description">Steamed Bun, Hoisin Katsu Sauce</span>
+                                <img src="images/PorkBellyBaoBun.jpg" id="PorkBaoBun" alt="Pork Bao Bun" style="display:none;">
+                            </li>
+                            <li><strong>Soft Shell Crab Bao Bun</strong> ⦁ 5<br><span class="Description">Japanese Tartar Sauce</span></li>
+                            <li style="color:#ee1a26;"><strong>Bao Bun Sampler</strong> ⦁ 12</li>
+                            <li>
+                                <strong><button class="modalButton">Miso Soup</button></strong> ⦁ 3.5<br><span class="Description">Tofu, Scallion, Seaweed</span>
+                                <img src="images/MisoSoup.jpg" id="MisoSoup" alt="Miso Soup" style="display:none;">
+                            </li>
+                            <li><strong>Veggie Spring Rolls</strong> ⦁ 7<br><span class="Description">Thai Chili Sauce</span></li>
+                            <li><strong>Lump Crab Wonton</strong> ⦁ 9<br><span class="Description">Soy Pickled Jalapenos</span></li>
+                            <li><strong>Honey Roasted Sweet Potato</strong> ⦁ 4.5<br><span class="Description">Sweet Japanese Potatoes, Orange, Soy, Sesame</span></li>
+                            <li><strong>Shrimp Shumai</strong> ⦁ 3</li>
+                            <li><strong>Takoyaki</strong> ⦁ 3</li>
+                            <li><strong>Chicken Thigh</strong> ⦁ 2.75</li>
+                            <li><strong>Chicken Breast</strong> ⦁ 2.75</li>
+                            <li><strong>Pork Katsu</strong> ⦁ 3</li>
+                            <li><strong>Panko Crusted Scallops</strong> ⦁ 3.75</li>
+                            <li><strong>Filet Mignon</strong> ⦁ 4</li>
+                            <li style="color:#ee1a26;"><strong>Yakitori Sampler</strong> ⦁ 18</li>
+                        </ul>
+
+                        <div class="divider">Large Plates</div>
+                        <ul id="LargePlates">
+                            <li><strong>Salmon Teriyaki</strong> ⦁ 22<br><span class="Description">Fried Brussel Sprouds, Yakionigiri</span></li>
+                            <li>
+                                <strong><button class="modalButton">Truffle Teriyaki Chicken</button></strong> ⦁ 19<br><span class="Description">Steamed Bok Choy, Yakionigiri</span>
+                                <img src="images/TruffleTeriyakiChicken.jpg" id="Truffle Teriyaki Chicken" alt="Truffle Teriyaki Chicken" style="display:none;">
+                            </li>
+                        </ul>
+
+                        <div class="divider">Noodles & Rice</div>
+                        <ul id="NoodlesRice">
+                            <li><strong>Spicy Chirashi Bowl</strong> ⦁ 24<br><span class="Description">Tuna, Salmon, Yellowtail, Spicy Sushi Rice</span></li>
+                            <li>
+                                <strong><button class="modalButton">Seafood Ramen</button></strong> ⦁ 17<br><span class="Description">Scallops, Shrimp, Soft Egg, Zanmai Broth</span>
+                                <img src="images/SeafoodRamen1.jpeg" id="Seafood Ramen" alt="Seafood Ramen" style="display:none;">
+                            </li>
+                            <li><strong>Japanese Curry Rice</strong> ⦁ 14<br><span class="Description">Traditional Japanese Curry, Carrots, Potato, Onion</span></li>
+                            <li><strong>Gyu Don</strong> ⦁ 14<br><span class="Description">Seasoned Beef over Rice</span><br><span style="font-weight: bold; color:#ee1a26; font-family: 'Figtree', sans-serif; font-size: 14px;">Add Fried Egg $1</span></li>
+                            <li><strong>Chicken Shoyu Ramen</strong> ⦁ 14<br><span class="Description">Chicken Thighs, Garlic, Soft Egg</span><br><span style="font-weight: bold; color:#ee1a26; font-family: 'Figtree', sans-serif; font-size: 14px;">Make it Spicy $1</span></li>
+                            <li><strong>Chicken Katsu Curry</strong> ⦁ 17<br><span class="Description">Japanese Curry with Chicken Katsu</span></li>
+                            <li>
+                                <strong><button class="modalButton">Pork Katsu Curry</button></strong> ⦁ 18<br><span class="Description">Japanese Curry with Pork Katsu</span>
+                                <img src="images/PorkKatsuCurry.jpg" id="Pork Katsu Curry" alt="Pork Katsu Curry" style="display:none;">
+                            </li>
+                            <li><strong>Bacon Mushroom Mazeman</strong> ⦁ 12<br><span class="Description">Mushroom, Crispy Bacon, Truffle Crème, Parmesan</span></li>
+                            <li><strong>Fat Pig Ramen</strong> ⦁ 15<br><span class="Description">Pork Belly, Soft Egg, Black Garlic Oil, Tonkotsu Broth</span></li>
+                            <li><strong>Wasabi Shrimp Fried Rice</strong> ⦁ 13<br><span class="Description">Wasabi Furikake, Egg, Soy Sauce</span></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="MenuContainer" id="Sushi">
+                        <div class="divider">Specialty Rolls</div>
+                        <ul id="SpecialtyRolls">
+                            <li><strong>Hokkaido Scallop Roll</strong> ⦁ 14<br><span class="Description">Spicy Crunchy Scallop Maki Topped with Kani Salad, Uni Sauce, 6pc</span></li>
+                            <li><strong>Veggie Deluxe Roll</strong> ⦁ 9<br><span class="Description">Crispy Shallot, Asparagus, Carrot & Shiso Maki Wasabi Stem Dressing & Micro Greens Ginger Dressing, 6pc</span></li>
+                            <li>
+                                <strong><button class="modalButton">U Penn Roll</button></strong> ⦁ 14<br><span class="Description">Spicy Crunchy Tuna Jalapeno Maki Topped with Tempura Chilean Sea Bass in Sweet Spicy Sauce, 6pc</span>
+                                <img src="images/UPennRoll2.jpg" id="U Penn Roll" alt="U Penn Roll" style="display:none;">
+                            </li>
+                            <li><strong>Drexel Dragon Roll</strong> ⦁ 14<br><span class="Description">Avocado Cream Cheese Tempura Maki Topped with BBQ Ell & Cucumber & Truffle Eel Sauce, 6pc</span></li>
+                            <li><strong>Red Dragon Roll</strong> ⦁ 16<br><span class="Description">Spicy Tuna Avocado Maki Topped with Tuna, Crispy Shallots & Sweet Chili Eel Sauce, 6pc</span></li>
+                            <li><strong>Orange Dragon Roll</strong> ⦁ 15<br><span class="Description">Spicy Salmon & Avocado Maki Topped with Salmon Sashimi & Sesame Yuzu Sauce, 6pc</span></li>
+                        </ul>
+
+                        <div class="divider">Hand Rolls</div>
+                        <ul id="HandRolls">
+                            <li><strong>Tuna Avocado</strong> ⦁ <span class="Description">5</span></li>
+                            <li><strong>Eel Avocado</strong> ⦁ <span class="Description">4.5</span></li>
+                            <li><strong>Salmon Avocado</strong> ⦁ <span class="Description">4.5</span></li>
+                            <li><strong>California</strong> ⦁ <span class="Description">4.5</span></li>
+                            <li><strong>Shrimp California</strong> ⦁ <span class="Description">4.5</span></li>
+                            <li><strong>Yellowtail Scallion</strong> ⦁ <span class="Description">5</span></li>
+
+                            <li><strong>Spicy Crunchy Tuna</strong> ⦁ <span class="Description">5.5</span></li>
+                            <li><strong>Spicy Crunchy Salmon</strong> ⦁ <span class="Description">5</span></li>
+                            <li><strong>Spicy Crunchy Shrimp</strong> ⦁ <span class="Description">5.5</span></li>
+                            <li><strong>Spicy Yellowtail</strong> ⦁ <span class="Description">6</span></li>
+                            <li><strong>Spider</strong> ⦁ <span class="Description">7</span></li>
+                            <li><strong>Salmon and Fig</strong> ⦁ <span class="Description">5</span></li>
+
+                            <li><strong>Philly</strong> ⦁ <span class="Description">4</span></li>
+                            <li>
+                                <strong><button class="modalButton">Yellowtail Jalapeno Mango</button></strong> ⦁ <span class="Description">5.5</span>
+                                <img src="images/YellowtailJalapenoMangoHandRoll.jpg" id="Yellowtail Jalapeno Mango Hand Roll" alt="Yellowtail Jalapeno Mango" style="display:none;">
+                            </li>
+                            <li><strong>Shrimp Tempura</strong> ⦁ <span class="Description">5</span></li>
+                            <li><strong>Veggie</strong> ⦁ <span class="Description">4</span></li>
+                            <li><strong>Avocado Cucumber</strong> ⦁ <span class="Description">4</span></li>
+                        </ul>
+
+                        <div class="divider">Rolls</div>
+                        <table>
+                            <tr>
+                                <td><strong>Shiitake</strong> ⦁ <span class="Description">5</span></td>
+                                <td><strong>Tuna Avocado</strong> ⦁ <span class="Description">6</span></td>
+                                <td><strong>Spicy Tuna</strong> ⦁ <span class="Description">5.5</span></td>
+                                <td><strong>Shrimp Tempura</strong> ⦁ <span class="Description">7</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ume Shiso</strong> ⦁ <span class="Description">5</span></td>
+                                <td><strong>Eel Avocado</strong> ⦁ <span class="Description">5.5</span></td>
+                                <td><strong>Spicy Salmon</strong> ⦁ <span class="Description">5</span></td>
+                                <td><strong>Veggie Tempura</strong> ⦁ <span class="Description">6</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Oshinko</strong> ⦁ <span class="Description">5</span></td>
+                                <td><strong>Salmon Avocado</strong> ⦁ <span class="Description">5.5</span></td>
+                                <td><strong>Spicy Yellowtail</strong> ⦁ <span class="Description">6</span></td>
+                                <td><strong>Spider</strong> ⦁ <span class="Description">9</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Avocado</strong> ⦁ <span class="Description">4</span></td>
+                                <td><strong>Salmon Fig</strong> ⦁ <span class="Description">5.5</span></td>
+                                <td><strong>Spicy Crunchy Tuna</strong> ⦁ <span class="Description">6</span></td>
+                                <td><strong>Classic California</strong> ⦁ <span class="Description">5.5</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cucumber</strong> ⦁ <span class="Description">4</span></td>
+                                <td><strong>Yellowtail Scallion</strong> ⦁ <span class="Description">6</span></td>
+                                <td><strong>Spicy Crunchy Salmon</strong> ⦁ <span class="Description">5.5</span></td>
+                                <td><strong>Shrimp California</strong> ⦁ <span class="Description">5</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Veggie Futo</strong> ⦁ <span class="Description">6</span></td>
+                                <td><strong>Yellowtail Jalapeno Mango</strong> ⦁ <span class="Description">7</span></td>
+                                <td><strong>Spicy Crunchy Shrimp</strong> ⦁ <span class="Description">6</span></td>
+                                <td><strong>Philly</strong> ⦁ <span class="Description">6</span></td>
+                            </tr>
+                        </table>
+
+                        <div class="divider">Combinations</div>
+                        <table>
+                            <tr>
+                                <td><strong>Maki Combo</strong> ⦁ 16<br><span class="Description">Spicy Tuna, Yellowtail Jalapeno Mango, Salmon Avocado</span></td>
+                                <td><strong>Sashimi Combo</strong> ⦁ 18<br><span class="Description">10 piece Chef's Selection</span></td>
+                                <td><strong>Sushi Combo</strong> ⦁ 18<br><span class="Description">7 piece Chef's Selection With 1 Roll</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="divider" style="width: 95%; margin: 30px auto 30px auto;">Happy Hour Drinks</div>
+                    <div class="drinkMenuItems">
+                        <div class="drinkMenuListing">
+                            <img src="images/Drinks1.jpg" id="menuImage1" alt="Cocktails">
+                            <span>Cocktails<br>$5</span>
+                        </div>
+                        <div class="drinkMenuListing">
+                            <img src="images/Drinks2.jpg" id="menuImage2" alt="Sake">
+                            <span>Shirayuki Sake<br>$3</span>
+                        </div>
+                        <div class="drinkMenuListing">
+                            <img src="images/Drinks6.jpg" id="menuImage3" alt="Japanese Beer">
+                            <span>Japanese Beer<br>$4</span>
+                        </div>
+                        <div class="drinkMenuListing">
+                            <img src="images/Drinks4.jpg" id="menuImage4" alt="Wine">
+                            <span>House Wine ⦁ Red or White <br>$4</span>
+                        </div>
+                        <div class="drinkMenuListing">
+                            <img src="images/Drinks5.jpg" id="menuImage5" alt="Cucumber Cocktail">
+                            <span>Cucumber Lemonade Cocktail<br>$5</span>
+                        </div>
+                    </div>
+
+            </div>
+
+            <div id="About" class="PageSection">
+                <div class="PageInformation">
+                    <h1>About CoZara</h1>
+                    <div class="AboutContent">
+                        <div class="AboutInfo">
+                            <div class="AboutImage" id="Zama1">
+                                <img src="images/Zama2.jpg" alt="Hiroyuki 'Zama' Tanaka">
+                                <p>"Japanese food in the U.S. has to be updated," says Tanaka, who has done so much to upgrade the sushi scene with creative maki artistry at Zama, his restaurant hit near Rittenhouse Square.</p>
+                            </div>
+
+                            <div class="AboutQuote">
+                                <p>There's much more to Japanese food than raw fish. Hiroyuki "Zama" Tanaka was determined to make that point at CoZara in University City. Along with sushi, Zama fired up the grill and deep-fryer to conjure some of his favorite homeland comforts for an izakaya-style gastropub.</p>
+                            </div>
+
+                            <p>CoZara excels in simple Japanese comforts done right - a griddled rice ball lacquered in teriyaki, a hearty braised beef and potato Niku Jaga stew, the thick chunks of velvety white salt-braised pork belly posed over dark ponzu. There is something so soul-satisfying about the purity of the ochazuke, a chunk of broiled salmon over rice that almost turned to congee when your server pours dashi broth from a teapot overtop.</p>
+
+                            <div class="AboutImage" id="Zama2">
+                                <img src="images/Zama3.jpg" alt="Owner of CoZara, Hiroyuki 'Zama' Tanaka, in the restaurant">
+                                <p>Chef Zama standing inside CoZara</p>
+                            </div>
+
+                            <p>Tanaka opened the 140-seat CoZara in April 2014 next to Zavino and Shake Shack in a commercial strip on Drexel University’s campus. There are many dining options on the two levels: the second-floor main dining room overlooking Chestnut Street, at the counter of the 10-seat open kitchen, at the nine-seat bar by the front door (stocked with Japanese beer and cocktails), and upstairs in a private room. A 30-seat outdoor terrace on the second floor is also an option in warm weather.</p>
+
+                            <h2>About Zama</h2>
+
+                            <p>Hiroyuki "Zama" Tanaka is a renowned chef and restaurateur known for his innovative approach to Japanese cuisine. Zama was born and raised in Kanagawa Japan, in 1971. He came to Philadelphia in 1991 to study English at Temple University through its campus in Japan. He needed a part-time job, and applied at Genji, then a popular Japanese restaurant on Sansom Street near Rittenhouse Square. Tanaka had kitchen experience back home, true — though it was frying burgers and baking pizza for American soldiers at Camp Zama, an Army base near his home in Kanagawa Prefecture. Tanaka climbed the ranks at Genji, heading its sushi and sake counter in the old Ritz-Carlton Hotel, before heading to Fish on Main in Manayunk. He rose through the Starr organization at Pod and Morimoto before opening Zama in 2009 at 128 S. 19th St. to stellar reviews. The Inquirer’s Craig LaBan called Zama “the best all-around Japanese restaurant to open since Morimoto.” Zama restaurant became a Philadelphia institution, frequented by multitudinous sushi lovers, sports celebrities, and Hollywood stars.
+                            <br><br>
+                            Zama was a venerable, self-taught sushi chef and a fixture in Philadelphia’s restaurant community. Many chefs working now carry with them the stamp of Zama’s generosity in sharing his expertise. Zama was known for his creativity and artistry in sushi making, and his restaurants were a beloved destination for sushi lovers in Philadelphia. Zama passed away in 2024, but his legacy lives on through the chefs he mentored and the impact he had on the Philadelphia restaurant scene.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Contact" class="PageSection">
+                <div class="PageInformation" id="ContactPage" style="margin-top: 20px;">
+                    <div class="ContactCallout" id="ContactInfo">
+                        <div>
+                            <h1 style="text-align: center;">Contact Us</h1>
+                            <p style="text-align: center;">We'd love to hear from you!<br>Reach out to us with any questions or feedback about your experience at CoZara.</p>
+                            <form>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required><br><br>
+
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required><br><br>
+
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone"><br><br>
+
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                                <input type="submit" value="Send" id="SendButton">
+                            </form>
+                            <img src="images/zama-mark.png" alt="Zama Mark" style="opacity: 0.25; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 75%;">
+                        </div>
+                    </div>
+
+                    <div class="ContactPageFlexBox">
+                        <div class="ContactCallout" id="ContactImages">
+                            <img src="images/Interior5.jpg" alt="Interior Shot of a Seating Area at CoZara">
+                        </div>
+
+                        <div class="ContactCallout" id="EventInfo">
+                            <div class="LeftContent" id="LeftEventInfo">
+                                <h2 style="text-align: center;">Host An Event Here</h2>
+                                <p style="text-align: justify;">CoZara offers diners two floors with a wide variety of dining options including a 10-seat open kitchen, nine seat bar as well as the geisha room, an upstairs private room.<br><br>Designed by Boxwood Architects, the restaurant has a chic relaxed atmosphere with varying textures of gray, blonde wooden tables and black iron chairs. Red accents and hand painted images of Shoguns and Geisha serve as the only adornment. Modern red silk moire drum lighting fixtures cast a dim glow. Ceilings are exposed industrial black duct work.<br><br>A 30 seat outdoor terrace is also available in the summer months. Our private dining manager is happy to assist you with planning the details of your event.</p>
+                            </div>
+                            <div class="RightContent" id="RightEventInfo">
+                                <img src="images/Interior15.jpg" alt="Interior Shot of the Main Floor">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ContactPageFlexBox">
+                        <div class="ContactCallout">
+                            <div class="LeftContent" id="LeftLocationInfo">
+                                <img src="images/Exterior1.png" alt="Exterior Shot of CoZara">
+                            </div>
+
+                            <div class="RightContent" id="RightLocationInfo">
+                                <h2 style="text-align: center;">Visit Us</h2>
+                                <p style="text-align: justify;">CoZara is conveniently located near UPenn and Drexel campuses in University City at 3200 Chestnut Street, Philadelphia, PA 19104.<br><br>We are open from 7:00 AM to 10:00 PM. We also host Happy Hour Monday through Friday from 4:00 PM to 7:00 PM. <br><br>Our small tapas-style plates make for great sharing among the table, so you can get a taste of our delicious cuisine.</p>
+                            </div>
+                        </div>
+
+                        <div class="ContactCallout" id="ContactImages">
+                            <img src="images/Interior11.jpg" alt="Interior Shot of Stairway Area at CoZara">
+                        </div>
+                    </div>
+
+                    <div class="ContactPageFlexBox">
+                        <div class="ContactCallout" id="BottomContactImages">
+                            <img src="images/Exterior6.jpg" alt="Exterior Shot of the Outdoor Seating Area at CoZara">
+                        </div>
+
+                        <div class="ContactCallout" id="BottomContactImages">
+                            <img src="images/Interior7.jpg" alt="Interior Shot of Another Seating Area at CoZara">
+                        </div>
+
+                        <div class="ContactCallout" id="BottomContactImages">
+                            <img src="images/Interior1-1.jpeg" alt="Interior Shot of the Bar Area at CoZara">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <footer>
+                <div class="FooterInfo">
+                    <div id="footerContact">3200 Chestnut St, Philadelphia, PA 19104<br>(267) 233-7488</div>
+                    <div style="text-align: center;" id="footerDescription">Japanese izakaya-style bar & grill<br>for small plates, sushi & sake cocktails</div>
+                    <div id="footerCopyright">© 2026 CoZara. All rights reserved.</div>
+                </div>
+            </footer>
+    </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
