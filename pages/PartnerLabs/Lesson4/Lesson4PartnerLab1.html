@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Partner Lab</title>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link href="../../../css/bootstrap.min.css" rel="stylesheet">
+<script src="script.js" defer></script>
+</head> 
+
+<body class="page1">
+  <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar" style="text-shadow: none; text-align: left;">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="pointer-events: none;">Mandi Anderson - IST 250 Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarDark"
+            aria-controls="offcanvasNavbarDark"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbarDark"
+            aria-labelledby="offcanvasNavbarDarkLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel" style="user-select: none; color: black;">
+                Navigation
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-black"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../../../MandiA-Portfolio.html" style="color: black;"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Practice Activities
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson2/index.html" style="color: black;">Lesson 2: Simple Webpage</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson8/MandiA-Lesson8Activity2.html" style="color: black;">Lesson 8: CSS Transforms and Filters</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson9/MandiA-Lesson9-PracticeActivity3.html" style="color: black;">Lesson 9: Bootstrap</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Individual Assignments
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson3/index.html" style="color: black;">Lesson 3: Selling on the Web</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson6/Lesson6IndividualAssignment2.html" style="color: black;">Lesson 6: The Record Store</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson7/Lesson7IndividualAssignment3.html" style="color: black;">Lesson 7: The Responsive Restaurant</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson11/Lesson11IndividualAssignment4.html" style="color: rgb(163, 163, 163);">Lesson 11: Bringing It All Together</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Partner Labs
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/PartnerLabs/Lesson4/Lesson4PartnerLab1.html" style="color: black;">Lesson 4: A Well-Styled Website</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PartnerLabs/Lesson5/Lesson5PartnerLab2.html" style="color: black;">Lesson 5: An Interactive Website</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+    <main style="transform: scale(0.999); border: 25px solid white; overflow: scroll; height: 95vh;">     
+
+    <div class="header">
+        <h1>Wolves: Understanding the Strength of the Wild</h1>
+    </div>
+
+    <div class="page-container">
+        <div class="menu">
+            <a class="active" id="species" onmouseenter="mouseEnterSpecies()" onmouseleave="mouseLeaveSpecies()"><span></span>Species</span></a>
+
+            <a href="page2.html" id="conservation" onmouseenter="mouseEnterConservation()" onmouseleave="mouseLeaveConservation()"><span>Conservation</span></a>
+
+            <a href="page3.html" id="cta" onmouseenter="mouseEnterCTA()" onmouseleave="mouseLeaveCTA()"> <span>What Can We Do?</span></a>
+        </div>   
+
+        <div class="content">
+            <h2><span class="highlight">Species</span></h2>
+        
+            <p style="line-height: 1.5;">There are two universally recognized species of wolves in world: the gray wolf (<em>Canis lupus</em>) and the red wolf (<em>Canis rufus</em>). In North America, recent research supports a third wolf species recognized by Canada, the eastern (Algonquin) wolf (<em>Canis lycaon</em>), which was previously considered a subspecies of the gray wolf. Similarly, there are ongoing debates on whether the Ethiopian wolf (<em>Canis simensis</em>), or Abyssinian wolf, belongs to the wolf or jackal family (<em>Canis aureus</em>).</p>
+            <p style="line-height: 1.5;">Wolves are a highly adaptable species that can thrive in a wide range of habitats including temperate forests, mountains, tundra, taiga, and grasslands. They live in family units called packs, usually consisting of the breeding pair and their offspring. It is not uncommon for unrelated wolves to join another family or pack.</p>
+
+            <h3>Red Wolves</h3>
+            <div style="line-height: 1.5; text-align: justify;">
+                    <div class="float-box-right">
+                        <img src="images/redwolf-floatimage.jpg" alt="Red Wolf Image" id="RedWolf">
+                        <p class="float-caption">Red Wolf</p>
+                    </div>
+                The red wolf is smaller than most gray wolves, ranging in size from 45 pounds (~20.4 kg) to 80 pounds (~36.3 kg), standing about 26 inches at the shoulder and about 4 feet long from the tip of the nose to the end of the tail. They are mostly brown and tan, with black along their backs and, as their name suggests, known for the red behind their ears and along the neck and legs. Red wolves also have sharper, pointier facial features. Their diet is a combination of white-tailed deer, raccoons, rabbits, and musk oxen. Red wolves only live in the United States and are protected as an endangered species under the Endangered Species Act, and classified as "critically endangered" on the International Union for Conservation of Nature's (IUCN) Red List. Their range historically included North Carolina, Tennessee, and Texas, but are now only known to live in North Carolina.
+
+                <br><br>Over the last decade, the red wolf's wild population as fallen by 50 percent, where as of February 2025, there were currently 16 known red wolves remaining in the wild. In the 1960s, their population was decimated by intensive predator control programs and habitat loss. They were declared an endangered species in 1967, meaning it is considered in danger of extinction throughout a significant portion or all of its range. In an effort to save the species from extinction, the U.S. Fish and Wildlife Service (USFWS) established a captive-breeding program in 1973 and biologists captured as many red wolves as possible. From the 17 captured individuals, 14 of them became the foundation of a successful captive breeding program. In 1977, the captive red wolf pais produced their first litters and biologists took great care to maintain their wild insticts, hoping to avoid creating a dependency on humans. The United States Fish and Wildlife Service (USFWS) declared red wolves extinct in the wild in 1980.
+
+                <br><br>Enough captive bred red wolves were bred by 1987 to begin a restoration program to return the species to a portion of their natural range in the southeast United States. That same year, they were reintroduced into the wild on the 120,000-acre Alligator River National Wildlife Refuge in northeastern North Carolina, and the first wild reproduction occurred in 1988. This reintroduction area has expanded, including federal and private lands, and now encompasses approximately 500,000 acres. The red wolf population peaked at over 130 individuals in 2006, but inaction and mismanagement by the USFWS, along with illegal killings, resulted in a steep population decline. There were no wild litters born in 2019 or 2020.
+
+                <br><br>On April 19, 2018, USFWS completed a Species Status Assessment (SSA) and five-year review for the red wolf. It was confirmed that the red wolves could go extinct within eight years evident by its struggling wild population. The termination of the recovery program would result in the loss of the remaining red wolves. In 2014, the USFWS put a stop to the reintroduction of captive-born red wolves into the wild, and even began issuing kill permits to landowners. In 2016, a proposal was made to place most of the remaining wild red wolves into captivity. The U.S. Disctrict Court Judge Terrence Boyle ruled in January, 2021 that the USFWS must have a plan to resume the successful practice of releasing captive red wolves developed within three months. USFWS released two male red wolves in February, 2021, onto Alligator River National Wildlife Refuge in eastern North Carolina, increasing the known wild population from 8 to 10. In May 2021, USFWS released four adult red wolves into the Red Wolf Recover Area and were able to place four captive born pups with a wild red wolf mother, bringing the wild red wolf population to 18 individuals. One of the released females was found dead in June 2021, four more died in July 2021, and another was found dead in the fall. As of October 2021, only 8 known red wolves were known to remain in the wild, the lowest its been since the late 1980s.
+            </div>
+            <br>
+            <h3>Gray Wolves</h3>
+            <div style="line-height: 1.5; text-align: justify;">
+                    <div class="float-box-left">
+                        <img src="images/graywolf-floatimage.jpg" alt="Gray Wolf Image" id="GrayWolf">
+                        <p class="float-caption">Gray Wolf</p>
+                    </div> 
+                    In North America, there are five subspecies of gray wolf: <em>Canis lupus baileyi</em> - the Mexican wolf or lobo, <em>Canis lupus nubilus</em> - the Great Plains or buffalo wolf, <em>Canis lupus occidentalis</em> - the Canadian or Rocky Mountain wolf, <em>Canis lupus lycoan</em> - the eastern of Algonquin wolf, <em>Canis lupus arctos</em> - the arctic wolf.
+
+                    <br><br>The diet of a gray wolf includes elk, moose, mule deer, white-tailed deer, bison, caribou, mountain goats, beaver, rabbits, and musk oxen. Their size varies depending on the subspecies and where they belong. In general, male wolves will be larger than their female counterparts.
+
+                    <br><br>Gray wolf were once the most widely distributed wild mammals, inhabiting most of the available land in the northern hemisphere. Today, they only occupy about two-thirds of their formal range worldwide due to habitat destruction and persecution by humans. In the United States, they occupy about 10% of the land they used to. Populations occupy diverse lands in the northern hemisphere. Infrastructure development, deforestation, and urbanization have led to significant habitat loss for wolves. Their natural ecosystems are distrupted with the reduction of available hunting grounds, forcing wolves into smaller isolated territories.
+                    
+                    <br><br>Wolves are an integral part of their ecosystems, known as a keystone predator. Their presence or absense can profoundly impact the health and structure of their ecosystems. By preying on large predators, they help regulate populations, preventing overgrazing and allowing plants to thrive. This is known as a trophic cascade. Disruptions within ecosystems following the removal of wolves has motivated conservation efforts and reintroduction programs with the hopes of restoring balance and biodiversity.
+                    
+                    <br><br>In 1978, the gray wolf was reclassified as an endangered population at the species level (C. lupus) throughout the contiguous United States and Mexico. The Minnesota gray wolf population is the exception, instead classified as threatened. The grey wolf populations in Idaho and Montana recovered enough to become delisted in 2011. Globally, reintroduction programs have had mixed results, and requires significant collaboration between conservationists, communities, and policymakers.
+
+
+            </div>    
+        </div>
+
+        <div class="right">
+            <h2>Quick Facts</h2>
+            <p style="font-size: 20px;text-align: right;"><span style="color:rgba(187, 187, 187, 0.5)">0</span>18 red wolves exist in the wild today.
+            </p>
+            <p style="font-size: 20px;text-align: right;">286 Mexican Gray wolves exist in the wild today.</p>
+            <br>
+            <p>As of 2017, up to 18,000 wolves live in the United States. Alaska has a stable population of 10,500 to 12,000 wolves.</p>
+            <br>
+            <p>Wolves from Canada occasionally disperse into upstate New York. The most recent wolf found in New York was mistakenly killed by a hunter, who mistook it for a coyote during hunting season.</p>
+            <br>
+            <p>There are 38 subspecies of <em>Canis lupus</em>, named over the past 250 years.</p>
+            <br>
+            <p>In 2020, review of canid domestication stated that modern dogs were not descended from the same Canis lineage as modern wolves. It instead proposed that dogs may be descended from a Pleistocene wolf closer in size to a village dog.</p>
+            <br>
+            <p>Wolves were wiped out in Mexico in the 1970s following the capture all of remaining wild Mexican wolves for the initiation of a captive-breeding program in an attempt to save the local subspecies, by the U.S. and Mexican governments.</p>
+            <p>On March 9th, 2022, two new breeding pairs of Mexican gray wolves were released into the wild in Chihuahua, Mexico, bringing the total number in the country to around 45 wild individuals.</p>
+            
+            <section class="mini-card">
+                <h2>Sources</h2>
+                <ul class="side-list">
+                    <li>
+                    <a href="https://www.nps.gov/yell/learn/nature/wolves.htm" target="_blank" rel="noopener">
+                        U.S Fish & Wildlife Service – Species Profile Gray Wolf
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://nywolf.org/learn/" target="_blank" rel="noopener">
+                        Wolf Conservation Center – Red Wolves and FAQ
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://www.aza.org/connect-stories/stories/saving-the-endangered-american-red-wolf" target="_blank" rel="noopener">
+                        AZA Connect – Saving the Endangered American Red Wolf
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://earth.org/how-wolves-help-safeguard-ecosystems-and-what-we-can-do-to-protect-them/" target="_blank" rel="noopener">
+                        Earth.org – How Wolves Help Safeguard Ecosystems And What We Can Do to Protect Them
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://blogs.oregonstate.edu/graywolfconservation/" target="_blank" rel="noopener">
+                        Oregon State – Status, Threats, and Recovery of the Gray Wolf
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <div style="background-color:rgba(0, 0, 0, 0.782);height:40px;"></div>
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    </body>
+</main>
+</html>

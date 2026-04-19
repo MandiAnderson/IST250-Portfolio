@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Partner Lab</title>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link href="../../../css/bootstrap.min.css" rel="stylesheet">
+<script src="script.js" defer></script>
+</head> 
+
+
+<body class="page2">
+  <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar" style="text-shadow: none; text-align: left;">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="pointer-events: none;">Mandi Anderson - IST 250 Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarDark"
+            aria-controls="offcanvasNavbarDark"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbarDark"
+            aria-labelledby="offcanvasNavbarDarkLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel" style="user-select: none; color: black;">
+                Navigation
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-black"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../../../MandiA-Portfolio.html" style="color: black;"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Practice Activities
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson2/index.html" style="color: black;">Lesson 2: Simple Webpage</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson8/MandiA-Lesson8Activity2.html" style="color: black;">Lesson 8: CSS Transforms and Filters</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson9/MandiA-Lesson9-PracticeActivity3.html" style="color: black;">Lesson 9: Bootstrap</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Individual Assignments
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson3/index.html" style="color: black;">Lesson 3: Selling on the Web</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson6/Lesson6IndividualAssignment2.html" style="color: black;">Lesson 6: The Record Store</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson7/Lesson7IndividualAssignment3.html" style="color: black;">Lesson 7: The Responsive Restaurant</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson11/Lesson11IndividualAssignment4.html" style="color: rgb(163, 163, 163);">Lesson 11: Bringing It All Together</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Partner Labs
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/PartnerLabs/Lesson4/Lesson4PartnerLab1.html" style="color: black;">Lesson 4: A Well-Styled Website</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PartnerLabs/Lesson5/Lesson5PartnerLab2.html" style="color: black;">Lesson 5: An Interactive Website</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+<main style="transform: scale(0.999); border: 25px solid white; overflow: scroll; height: 95vh;">    
+<div class="header">
+    <h1>Wolves: Understanding the Strength of the Wild</h1>
+</div>
+
+<div class="page-container">
+    <div class="menu">
+        <a href="Lesson4PartnerLab1.html" id="species" onmouseenter="mouseEnterSpecies()" onmouseleave="mouseLeaveSpecies()"><span>Species</span></a>
+
+        <a class="active" id="conservation" onmouseenter="mouseEnterConservation()" onmouseleave="mouseLeaveConservation()"><span>Conservation</span></a>
+
+        <a href="page3.html" id="cta" onmouseenter="mouseEnterCTA()" onmouseleave="mouseLeaveCTA()"><span>What Can We Do?</span></a>
+    </div>
+
+    <div class="content">
+        <h2><span class="highlight">Conservation</span></h2>
+            <div class="float-box-right">
+                <img src="images/wolf-float.jpeg" alt="Wolf Print in Sandy Substrate">
+                <p class="float-caption">Wolf paw print in a sandy substrate</p>
+            </div> 
+        <p>Wolves are essential to maintaining balance in the ecosystems they inhabit. As apex predators, they help regulate prey populations, which prevents overgrazing and allows vegetation to recover. This natural balance supports a wide range of other species, from birds to beavers, and strengthens the overall health of the environment. When wolves disappear, ecosystems can quickly become unstable.</p>
+        <p>Despite their ecological importance, wolves continue to face significant threats. Habitat loss from development, changing wildlife policies, and conflicts with livestock have reduced populations in many areas. Even in regions where gray wolves have recovered, their legal protection remains debated. Conservation efforts must remain consistent and guided by scientific research to ensure long-term stability.</p>
+        <p>The red wolf faces a far more critical situation. With fewer than 20 individuals remaining in the wild, this species is one of the most endangered mammals in the United States. Once widespread across the southeastern region, red wolves now survive only through intensive conservation programs, including captive breeding and habitat management.</p>
+        <p>Protecting wolves is about more than saving a single species. Their presence influences entire ecosystems and supports biodiversity on a much larger scale. Conservation is not simply about preserving wildlife, it is about protecting the natural systems that all living things depend on, including humans.</p>
+    </div>
+
+    <div class="right">
+        <div class="right-cards">
+            <section class="mini-card">
+            <h2>Action</h2>
+            <ul class="side-list">
+                <li>Support wildlife conservation organizations</li>
+                <li>Stay informed about wolf protection laws</li>
+                <li>Share accurate information to reduce myths</li>
+                <li>Advocate for science-based wildlife policies</li>
+            </ul>
+            </section>
+
+            <section class="mini-card">
+            <h2>Coexistence Tips</h2>
+            <ul class="side-list">
+                <li>Promote non-lethal livestock deterrents</li>
+                <li>Support habitat preservation</li>
+                <li>Respect wildlife corridors and protected lands</li>
+            </ul>
+            </section>
+
+            <section class="mini-card">
+            <h2>Sources</h2>
+            <ul class="side-list">
+                <li>
+                <a href="https://www.nps.gov/yell/learn/nature/wolves.htm" target="_blank" rel="noopener">
+                    National Park Service – Yellowstone Wolf Project
+                </a>
+                </li>
+                <li>
+                <a href="https://www.fws.gov/program/red-wolf-recovery-program" target="_blank" rel="noopener">
+                    U.S. Fish &amp; Wildlife Service – Red Wolf Recovery Program
+                </a>
+                </li>
+                <li>
+                <a href="https://defenders.org/wildlife/gray-wolf" target="_blank" rel="noopener">
+                    Defenders of Wildlife – Gray Wolf
+                </a>
+                </li>
+                <li>
+                <a href="https://www.biologicaldiversity.org/species/mammals/red_wolf/" target="_blank" rel="noopener">
+                    Center for Biological Diversity – Red Wolf
+                </a>
+                </li>
+            </ul>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div style="background-color:rgba(0, 0, 0, 0.782);height:40px;"></div>
+</main>
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

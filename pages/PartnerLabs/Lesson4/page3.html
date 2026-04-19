@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Partner Lab</title>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<link href="../../../css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head> 
+
+  <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar" style="text-shadow: none; text-align: left;">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="pointer-events: none;">Mandi Anderson - IST 250 Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarDark"
+            aria-controls="offcanvasNavbarDark"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbarDark"
+            aria-labelledby="offcanvasNavbarDarkLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel" style="user-select: none; color: black;">
+                Navigation
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-black"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../../../MandiA-Portfolio.html" style="color: black;"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Practice Activities
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson2/index.html" style="color: black;">Lesson 2: Simple Webpage</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson8/MandiA-Lesson8Activity2.html" style="color: black;">Lesson 8: CSS Transforms and Filters</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson9/MandiA-Lesson9-PracticeActivity3.html" style="color: black;">Lesson 9: Bootstrap</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Individual Assignments
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson3/index.html" style="color: black;">Lesson 3: Selling on the Web</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson6/Lesson6IndividualAssignment2.html" style="color: black;">Lesson 6: The Record Store</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson7/Lesson7IndividualAssignment3.html" style="color: black;">Lesson 7: The Responsive Restaurant</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson11/Lesson11IndividualAssignment4.html" style="color: rgb(163, 163, 163);">Lesson 11: Bringing It All Together</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Partner Labs
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/PartnerLabs/Lesson4/Lesson4PartnerLab1.html" style="color: black;">Lesson 4: A Well-Styled Website</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PartnerLabs/Lesson5/Lesson5PartnerLab2.html" style="color: black;">Lesson 5: An Interactive Website</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+<main style="transform: scale(0.999); border: 25px solid white; overflow: scroll; height: 95vh;">    
+<body class="page3">
+    
+        <div class="header">
+            <h1>Wolves: Understanding the Strength of the Wild</h1>
+        </div>
+
+<div class="page-container">
+    <div class="menu">
+        <a href="Lesson4PartnerLab1.html" id="species" onmouseenter="mouseEnterSpecies()" onmouseleave="mouseLeaveSpecies()"><span>Species</span></a>
+
+        <a href="page2.html" id="conservation" onmouseenter="mouseEnterConservation()" onmouseleave="mouseLeaveConservation()"><span>Conservation</span></a>
+
+        <a class="active" id="cta" onmouseenter="mouseEnterCTA()" onmouseleave="mouseLeaveCTA()"><span>What Can We Do?</span></a>
+    </div>
+
+    <div class="content" style="line-height:1.5;">
+        <h2><span class="highlight">What Can We Do?</span></h2>
+        <div class="quote">
+                <h3><span style="display:inline-block;text-align:left;">“If you think you're too small to have an impact, try going to bed with a mosquito in the room.”</span><br><span style="display:block;text-align:right;">~Anita Roddick</span></h3>
+        </div>
+
+        <br>
+        <h3 style="text-align: center;">The feeling that one person cannot have an impact on the "bigger picture" is not uncommon, however, anyone can make a significant impact.<br>Listed below are ways that you can be more involved in wolf conservation efforts.</h3>
+        <br>
+
+        <h4>Support AZA-accredited Zoos and Aquariums</h4>
+        <div class="aza-info">
+            <img src="https://www.aza.org/assets/2332/pasted_aza_acwgf_logo_circle_rgb2.jpg" alt="AZA Circle Logo" id="AZALogo" style="float:right;height:auto;object-fit:cover;border-radius:50%;shape-outside:circle();margin-left:50px;margin-bottom:10px;">
+            The Association of Zoos and Aquariums (AZA) is a 501(c)3 non-profit organization dedicated conservation, education, science, and recreation across zoos and aquariums. There are over 254 AZA-accredited facilities in the United States and overseas that meet the highest standards in animal care and welfare, and provide a fun educational experience. Supporting these accredited zoos and aquariums is one way to help ensure the survival of endangered species. You can learn more about the Association of Zoos and Aquariums (AZA) on <a href="https://www.aza.org/about-us">their website</a>.
+        </div>
+
+        </p><p>Some facilities that are working to help protect red wolves from extinction include:</p>
+        <div class="azacolumns">
+            <ul style="margin-top:0; padding-top: 0;">
+                <li>Point Defiance Zoo and Aquarium, Washington</li>
+                <li>Akron Zoo, Ohio</li>
+                <li>Alexandria Zoological Park, Louisiana</li>
+                <li>North Carolina Zoo, North Carolina</li>
+                <li>Miller Park Zoo, Illinois</li>
+                <li>Beardsley Zoo, Connecticut</li>
+                <li>Lincoln Park Zoo, Illinois</li>
+                <li>Museum of Life and Science, North Carolina</li>
+                <li>Fort Worth Zoo, Texas</li>
+                <li>Fossil Rim Wildlife Center, Texas</li>
+                <li>Fresno Chaffee Zoo, California</li>
+                <li>Northeastern Wisconsin Zoo, Wisconsin</li>
+                <li>Zoo Knoxville, Tennessee</li>
+                <li>Zoo Tampa at Lowry Park, Florida</li>
+                <li>Roger Williams Park Zoo, Rhode Island</li>
+                <li>Great Plains Zoo, South Dakota</li>
+                <li>Rosamond Gifford Zoo, New York</li>
+                <li>Trevor Zoo, New York</li>
+                <li>Virginia Living Museum, Virginia</li>
+                <li>Endangered Wolf Center, Missouri</li>
+                <li>Western North Carolina Nature Center, North Carolina</li>
+            </ul>
+        </div>
+            
+        <h4>Raise awareness in your community about the importance of wolves as apex predators and keystone species, being mindful of how you do so</h4>
+        <p>Public eduation is crucial for reducing misconceptions about wolves. Without advocating for stronger legal protections, habitat restoration, sustainable livestock practices, and climate action, these threats could reverse conservation efforts and push wolves back to endangerment. Wolves are legally protected under national and international conservation frameworks in many regions, including the Endangered Species Act. Although legal protection has contributed to the recovery of wolf populations in certain areas, they continue to face culling programs and legal hunting quotas due to different jurisductions and lack of legal protections in other regions.</p><br>
+
+        <h4>Help with education programs about wildlife and ecology</h4>
+        <p>Look for conservation opportunities and donate your time locally. The U.S. Fish and Wildlife Service has an entire page on their website dedicated to helping people find volunteer opportunities for them. You can find this resource on <a href="https://www.fws.gov/volunteer-opportunity">their website.</a></p><br>
+
+        <h4>Stay up-to-date and informed on your state's open comment periods regarding conservation policy changes</h4>
+        <p>Regularly check websites for your state's environmental protection agency for regulations, public hearings, and comment periods. Public meetings update the public on the current status of local projects and programs and to get public input on proposals in order for the Department to choose and appropriate coarse of action. These meetings are often held virtually and in person. A public comment period is an opportunity to share your opinion on a proposed federal rule or regulation. Public comments are a great way to engage with federal agencies on important decisions.</p><br>
+
+        <h4>Advocate for cohabitation between people and wildlife</h4>
+        <p>Though other issues exist that negatively impact wolf populations, a significant threat wolves contend with are humans. The history between humans and wolves is heavily influenced by ignorance and fear. Wolf habitats have been converted to grazing land for cattle, which escalates conflicts. Humans are hunting wolf prey species, increasing the probability that wolves would turn to alternative food sources such as livestock. Consequently, wolves that impede on private property or threaten livestock are hunted. Unfortunately, greater interest lies with the livestock industry than it does for the conservation of wolves, with kill permits often issued when requested.</p>
+        <p>Wolves are risk-adverse and naturally wary of humans because of past persecution by people. In order to ensure the success of long-term wolf conservation, there needs to be collaborative efforts between communities and conservationists. There are many conservation groups that collaborate with ranchers and farmers to implement tactics to reduce human-wolf conflicts, including non-lethal predator deterrants, livestock guardian dogs, electric fencing, and range riders.</p>
+    </div>
+
+    <div class="right" style="gap:15px;">
+        <div class="ctaactionables" id="EndangeredSpecies">
+            <h3>Take Action to Protect the Endangered Species Act</h3>
+            <p>Ask your Congressional representatives to protect our nation's most effective law for protecting wildlife in danger of extinction.</p>
+        </div>
+        <br>
+        <div class="ctaactionables" id="FishWildlife">
+            <h3>Tell the U.S. Fish and Wildlife Service to Protect Gray Wolves</h3>
+            <p>The Service wants to reinstate a rule that stripped protections for gray wolves across the lower 48 states and led to the slaughter of hundreds of wolves.</p>
+        </div>
+        <br>
+        <div class="ctaactionables" id="MexicanGray">
+            <h3>Tell Congress to Oppose Efforts to Derail Mexican Wolf Recovery</h3>
+            <p>The House Natural Resources Committee advanced a bill that would prematurely remove Endangered Species Act protections for Mexican gray wolves.</p>
+        </div>
+        <br>
+        <div class="ctaactionables" id="AntiWolfBill">
+            <h3>VOTE NO on Anti-Wolf Bill H.R. 845</h3>
+            <p>The bill directs the Secretary of the Interior to delist the gray wolf from the Endangered Species Act.</p>
+        </div>
+    </div> 
+</div>
+
+<div style="background-color:rgba(0, 0, 0, 0.782);height:40px;"></div>
+    </main>
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
