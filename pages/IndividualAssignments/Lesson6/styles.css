@@ -1,4 +1,4 @@
-body {
+main body {
     background-image: url(/images/Wallpaper3.jpeg);
     background-size: 750px 750px;
     background-repeat: repeat;
@@ -27,7 +27,7 @@ body {
     right: 2%;
 }
 
-footer {
+main footer {
     position: fixed;
     width: 100%;
     background-image: url(/images/Wainscoting.jpg);
@@ -59,7 +59,7 @@ footer div {
     pointer-events: none;
 }
 
-.ShelfFront {
+main .ShelfFront {
     background-image: url(/images/Shelf.jpeg);
     height: 25px;
     justify-content: center;
@@ -72,7 +72,7 @@ footer div {
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5), 0px -3px 10px rgba(0, 0, 0, 0.33);
 }
 
-.ShelfBack {
+main .ShelfBack {
     background-image: url(images/Shelf.jpeg);
     transform: scale(-1);
     height: 50px;
