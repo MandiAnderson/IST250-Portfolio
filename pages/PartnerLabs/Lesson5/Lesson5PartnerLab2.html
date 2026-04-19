@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mandi and Ulric - Partner Lab 2</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+</head>
+
+  <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar" style="text-shadow: none; text-align: left;">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="pointer-events: none;">Mandi Anderson - IST 250 Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarDark"
+            aria-controls="offcanvasNavbarDark"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbarDark"
+            aria-labelledby="offcanvasNavbarDarkLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel" style="user-select: none; color: black;">
+                Navigation
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-black"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../../../MandiA-Portfolio.html" style="color: black;"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Practice Activities
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson2/index.html" style="color: black;">Lesson 2: Simple Webpage</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson8/MandiA-Lesson8Activity2.html" style="color: black;">Lesson 8: CSS Transforms and Filters</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PracticeActivity/Lesson9/MandiA-Lesson9-PracticeActivity3.html" style="color: black;">Lesson 9: Bootstrap</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Individual Assignments
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson3/index.html" style="color: black;">Lesson 3: Selling on the Web</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson6/Lesson6IndividualAssignment2.html" style="color: black;">Lesson 6: The Record Store</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson7/Lesson7IndividualAssignment3.html" style="color: black;">Lesson 7: The Responsive Restaurant</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/IndividualAssignments/Lesson11/Lesson11IndividualAssignment4.html" style="color: rgb(163, 163, 163);">Lesson 11: Bringing It All Together</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: black;"
+                  >
+                    Partner Labs
+                  </a>
+                  <ul class="dropdown-menu"  style="color: black;">
+                    <li><a class="dropdown-item" href="../../../pages/PartnerLabs/Lesson4/Lesson4PartnerLab1.html" style="color: black;">Lesson 4: A Well-Styled Website</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../pages/PartnerLabs/Lesson5/Lesson5PartnerLab2.html" style="color: black;">Lesson 5: An Interactive Website</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+<body>
+<main style="transform: scale(0.999); border: 25px solid white; overflow: scroll; height: 95vh;" id="mug-website">
+<div class="container" style="margin-top: 30px;">
+    <div class="header">
+    <h1 id="greeting">Hello!</h1>
+    <p id="welcome"></p>
+    </div>
+
+    <div id="TextInputs">
+        <!-- 1) A text box for the user to enter their name (to customize the greeting) -->
+        <label for="name">What is your name?</label>
+        <input type="text" id="name">
+        <br>
+        <!-- 2) A text box for the user to enter the brief message to be displayed inside of the <p> element created in step 1. -->
+        <label for="message">Type a message to display:</label>
+        <input type="text" id="message" placeholder="Welcome to our website.">
+    </div>
+
+    <!-- 3) A drop down menu that allows the user to choose the background color of the page from several options. -->
+    <div>
+        <label for="backgroundColor">Change background color:</label>
+        <select name="backgroundColor" id="backgroundColor">
+            <option value="Default">Pick a color</option>
+            <option value="Peach">Peach</option>
+            <option value="Apple">Apple</option>
+            <option value="Mango">Mango</option>
+            <option value="Pumpkin">Pumpkin</option>
+            <option value="Banana">Banana</option>
+            <option value="Lime">Lime</option>
+        </select>
+    </div>
+
+    <!-- 4) A submit button that puts these changes into effect. -->
+    <button class="partnerlab-button" onclick="updatePage()">Update</button>
+    <br>
+    <img src="https://cdn.7tv.app/emote/01F90FGXMR000E8YHYQH076C1Z/4x.avif" alt="Cat Running" style="visibility:hidden;z-index:10" height="100" id="Cat">
+</div>
+<br>
+<div class="container">
+    <div class="header">
+        <h2>To-Do List</h2>
+    </div> 
+    <!-- Add "To Do List" functionality that allows the user to add "To Do" items using an additional text box and button.  Each "To Do" item should be stored as a list item inside of an ordered list. -->
+    <div id="ToDoList">
+        <ul id="todoList"></ul>
+        <input type="text" id="todoInput" placeholder="Add task to to-do list">
+        <button class="partnerlab-button" onclick="addTask()">Add Task</button>
+    </div>
+</div>
+<br>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="../../../js/bootstrap.bundle.min.js"></script>
+    </main>
+</body>
+</html>
