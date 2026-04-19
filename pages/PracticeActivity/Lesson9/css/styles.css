@@ -7,7 +7,7 @@ main section {
   float: left;
   background-size: cover;
   &.automatic-ripples, &.hover {
-    background-image: url('https://www.publiclandstour.us/wp-content/uploads/Clear-water-and-river-rocks.jpg');
+    background-image: url('./images/river-rocks.jpg');
     background-position: center;
     background-size: cover;
   }
