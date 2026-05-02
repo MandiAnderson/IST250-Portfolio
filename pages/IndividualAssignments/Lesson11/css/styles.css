@@ -9,11 +9,11 @@ main {
     background-size: 50%;
 }
 
-a {
+main a {
     color: black;
 }
 
-.grid-layout {
+main .grid-layout {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 0.4fr 4fr;
@@ -24,7 +24,7 @@ a {
     position: relative;
 }
 
-.grid-header {
+main .grid-header {
     grid-area: 1 / 1 / 2 / 4;
     padding: 0px 30px;
     text-align: center;
@@ -37,34 +37,34 @@ a {
     margin-bottom: 15px;
 }
 
-.grid-sidebar {
+main .grid-sidebar {
     grid-area: 2 / 1 / 3 / 2;
 }
 
-.grid-right-column {
+main .grid-right-column {
     grid-area: 2 / 3 / 3 / 4;
     text-align: center;
     position: relative;
     z-index: 1;
 }
 
-.navigation {
+main .navigation {
     position: relative;
     z-index: 1;
     font-family: 'Autour One', sans-serif;
     font-size: 1.25em;
 }
 
-.navigation a:hover, .navigation a.active {
+main .navigation a:hover, main .navigation a.active {
     right: -15px;
 }
 
-.navigation a.active {
+main .navigation a.active {
     align-items: center;
     justify-content: center;
 }
 
-.navigation a {
+main .navigation a {
     position: absolute;
     right: -75%;
     transition: 0.25s ease-in-out;
@@ -82,12 +82,12 @@ a {
     overflow: hidden;
 }
 
-.navigation a:not(.active):hover {
+main .navigation a:not(.active):hover {
     position: absolute;
     right: -70%; 
 }
 
-.navigation img {
+main .navigation img {
     position: absolute;
     left: 11px;
     filter: drop-shadow(1px 1px 0.5px black)
@@ -143,7 +143,7 @@ a {
     background-color: #c2d11b;
 }
 
-.grid-main-content {
+main .grid-main-content {
     position: relative;
     grid-area: 2 / 2 / 3 / 3;
 }
@@ -183,32 +183,32 @@ a {
     border-radius: 6px;
 }
 
-.main-content-left {
+main .main-content-left {
     width: 47%; 
     float: left;
 }
 
-.main-content-right {
+main .main-content-right {
     width: 47%;
     float: right;
 }
 
-.main-content-left p, .main-content-right p {
+main .main-content-left p, .main-content-right p {
     margin: 0;
     padding: 0;
 }
 
-.image-callout {
+main .image-callout {
     position: relative;
 }
 
-.image-callout img {
+main .image-callout img {
     border: 10px solid white;
     width: 97%;
     filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.25))
 }
 
-.image-callout span {
+main .image-callout span {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-family: "JetBrains Mono", monospace;
@@ -229,11 +229,11 @@ a {
     /* margin: 25px 0px 25px 0px; */
 }
 
-.sticker {
+main .sticker {
     padding: 24px 20px 0px 0px;
 }
 
-.section-header {
+main .section-header {
     margin: 15px 0px 10px 0px;
     background-color: hsla(29, 76%, 11%, 0.666);
     width: 97%;
@@ -241,49 +241,49 @@ a {
     color: white;
 }
 
-h1, h2, h4 {
+main h1, main h2, main h4 {
     margin: 0;
 }
 
-h3:not(.bootstrap-insert *) {
+main h3:not(.bootstrap-insert *) {
     width: 100%;
     border-bottom: 1.5px dashed black;
 }
 
-table {
+main table {
     width: 100%;
 }
 
-table td, th {
+main table td, main table th {
     padding: 5px 7.5px;
 }
 
-table th {
+main table th {
     font-weight: bold;
     text-decoration: underline;
 }
 
-table td:first-child, table th:first-child {
+main table td:first-child, main table th:first-child {
     text-align: right;
 }
 
-table td:last-child, table th:last-child {
+main table td:last-child, table th:last-child {
     text-align: left;
 }
 
 
-.form {
+main .form {
     margin-top: 30px;
     line-height: 1.5;
 }
 
 
-.form label span {
+main .form label span {
     color: rgb(126, 113, 96);
     float: right;
 }
 
-.radio-buttons {
+main .radio-buttons {
     text-align: center;
     display: flex;
     justify-content: space-between;
