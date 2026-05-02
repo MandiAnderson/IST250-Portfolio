@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <link href="css/features.css" rel="stylesheet">
+    <link href="css/trimmed-bootstrap-css.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Mandi A - Individual Assignment 11</title>
+</head>
+
+
+<body class="page1">
+    <div class="grid-layout">
+        <div class="grid-header">
+            The Wonderful World of Invertebrates
+        </div>
+
+        <div class="grid-sidebar">
+            <div class="navigation">
+                <a href="IndividualAssignment11.html" id="Navigation-Home"><img src="images/house-noto.svg" height="66%;">Home</a>
+                <a href="IndividualAssignment11-Page2.html" id="Navigation-Ants"><img src="images/ant-noto.svg" height="66%;">Ants</a>
+                <a href="IndividualAssignment11-Page3.html" id="Navigation-Bees"><img src="images/honeybee-noto.svg" height="66%;">Bees</a>
+                <a href="IndividualAssignment11-Page4.html" id="Navigation-Beetles"><img src="images/lady-beetle-noto.svg" height="66%;">Beetles</a>
+                <a href="IndividualAssignment11-Page5.html" id="Navigation-Butterflies"><img src="images/butterfly-noto.svg" height="66%;">Butterflies</a>
+                <a href="IndividualAssignment11-Page6.html" id="Navigation-Cockroaches"><img src="images/cockroach-noto.svg" height="66%;">Cockroaches</a>
+                <a href="IndividualAssignment11-Page7.html" id="Navigation-Flies"><img src="images/fly-noto.svg" height="66%;">Flies</a>
+                <a href="IndividualAssignment11-Page8.html" id="Navigation-Mosquitoes"><img src="images/mosquito-noto.svg" height="66%;">Mosquitoes</a>
+                <a href="IndividualAssignment11-Page9.html" id="Navigation-Spiders"><img src="images/spider-noto.svg" height="66%;">Spiders</a>
+                <a href="IndividualAssignment11-Page10.html" id="Navigation-Bug" class="active"><img src="images/bug-noto.svg" height="66%;">Newsletter</a>
+            </div>
+        </div>
+
+        <div class="grid-main-content">
+                <div class="book">
+                    <div class="main-content-left">
+                        <h1>Sign up for our e-mail newsletter!</h1>
+                        <h3 style="margin: 20px 0px 5px 0px;">In our newsletter we cover:</h3>
+                            <ul>
+                                <li>strategies for preserving pollinator populations including bees, butterflies, and moths.<br><span style="color: rgb(126, 113, 96);">(By including your geographical region, we are better able to cater resources to your location, but is not required.)</span></li>
+                                <li>information about creating and maintaining insect habitats.</li>
+                                <li>updates on and efforts to influence environmental legislation</li>
+                                <li>current findings on invertebrate population trends</li>
+                                <li>reports on the status of pollinators and at-risk species</li>
+                            </ul>
+
+                        <div class="form">
+                            <form onsubmit="return false" method="post">
+                                <label for="name" required>Name<span>So we know who we're speaking to</span></label>
+                                <input type="text" id="name" name="name" placeholder="Your name..." style="margin-bottom: 15px;">
+                                <br>
+                                <label for="email" required>E-Mail Address<span>How else are we going to reach you?</span></label>
+                                <input type="text" id="email" name="email" placeholder="Your e-mail address...">
+                                <br>
+                                <p style="text-align: center; width: 75%; line-height: 1.5; border-bottom: 1.5px dashed black; margin: 15px auto 5px auto;">Select Your U.S. Region</p>
+                                <div class="radio-buttons">
+                                    <input type="radio" name="region" id="northeast">
+                                    <label for="northeast">Northeast</label>
+
+                                    <input type="radio" name="region" id="midwest">
+                                    <label for="midwest">Midwest</label>
+
+                                    <input type="radio" name="region" id="south">
+                                    <label for="south">South</label>
+
+                                    <input type="radio" name="region" id="west">
+                                    <label for="west">West</label>
+                                </div>
+                                <input type="checkbox" required style="margin: 25px 15px 30px 0px;">I consent to recieving e-mails
+                                <br>
+                                <input type="submit" value="Submit" id="submit-button" onclick="submitFunction(event)">
+                            </form>
+                            <div id="form-success-message" style="margin-top: 8px; text-align: center;">
+                                Thank you for signing up for your newsletter!
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="main-content-right">
+                            <h3 style="margin: 20px 0px 5px 0px; line-height: 1.15; font-size: 17px;">For more resources on invertebrates, check out these organizations!</h3>
+                        <div class="organization-cards">
+                            <div class="org-card">
+                                <img src="images/xerces-card-image.jpg" alt="Monarch butterflyy image from Xerces">
+                                <div class="org-card-link">
+                                    <a href="https://www.xerces.org/"><img src="images/xerces-logo.png" alt="Xerces Logo"></a>
+                                </div>
+                            </div>
+                            <div class="org-card">
+                                <img src="images/res-card-image.jpg">
+                                <div class="org-card-link">
+                                    <a href="https://www.royensoc.co.uk/"><img src="images/reslogo.svg" alt="Royal Entomologial Society Logo" style="filter: drop-shadow(0.75px 0.75px 1px black);"></a>
+                                </div>
+                            </div>
+                            <div class="org-card">
+                                <img src="images/snail.jpg">
+                                <div class="org-card-link">
+                                    <a href="https://www.entsoc.org/resources/links/insect_orgs"><img src="images/esa.svg" alt="Entomologial Society of America Logo" style="filter: drop-shadow(0.75px 0.75px 1px black);"></a>
+                                </div>
+                            </div>      
+                            <div class="org-card">
+                                <img src="images/res-card-image.jpg">
+                                <div class="org-card-link">
+                                    <a href="https://iucn.org/our-union/commissions/group/iucn-ssc-invertebrate-conservation-committee"><img src="images/iucn-logo.svg" alt="IUCN Logo"></a>
+                                </div>
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            <div class="book-border"></div>
+        </div>
+
+    <script src="js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+<footer class="pencil">
+    <div id="eraser"></div>
+    <div id="metal"></div>
+    <div id="body">
+        <p>&copy; 2026 - Mandi Anderson</p>
+    </div>
+    <div id="wood"></div>
+</footer>
+</html>
