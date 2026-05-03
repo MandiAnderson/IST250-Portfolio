@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Autour+One&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Stack+Sans+Headline&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-    
 body {
     margin: 0;
     padding: 0;
@@ -226,7 +222,7 @@ a {
 }
 
 .bootstrap-insert {
-    width: 100%;
+    width: 90%;
     margin: 0px 10px 40px 0px;
     padding: 0px 0px 0px 0px;
 }
@@ -707,4 +703,3 @@ footer {
         font-size: 0.75rem;
     }
 }
-
